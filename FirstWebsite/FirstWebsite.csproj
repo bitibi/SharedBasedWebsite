@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PackageId>FirstWebsite</PackageId>
+    <Authors>FirstWebsite</Authors>
+    <Company>FirstWebsite</Company>
+    <Product>FirstWebsite</Product>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,6 +22,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
 </Project>
