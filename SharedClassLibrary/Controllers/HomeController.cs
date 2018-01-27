@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using FirstWebsite.Models;
+using SharedClassLibrary.Models;
 
-namespace FirstWebsite.Controllers
+namespace SharedClassLibrary.Controllers
 {
     public class HomeController : Controller
     {

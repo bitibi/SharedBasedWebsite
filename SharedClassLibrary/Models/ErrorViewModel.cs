@@ -1,6 +1,6 @@
 using System;
 
-namespace FirstWebsite.Models
+namespace SharedClassLibrary.Models
 {
     public class ErrorViewModel
     {
