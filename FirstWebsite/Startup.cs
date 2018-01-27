@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -42,6 +43,12 @@ namespace FirstWebsite
             }
 
             app.UseStaticFiles();
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "..\\SharedClassLibrary\\SharedCode")),
+                RequestPath = "/shared"
+            });
 
             app.UseMvc(routes =>
             {
